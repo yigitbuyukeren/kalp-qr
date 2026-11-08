@@ -73,7 +73,7 @@ python3 kalp-qr.py https://site-adresin --renk "#c9a7ff" --arka "#1b1238" -o mor
 ```bash
 python3 -m unittest discover -s tests
 ```
-Testler PNG'nin üretildiğini, aynı adresin aynı görseli verdiğini ve renk ayrıştırmayı denetler. `opencv-python` kuruluysa üretilen kalbi gerçekten okuyup adresi geri alır. Görselde yazı için macOS'ta Georgia, başka sistemlerde DejaVu Serif aranır; bulunamazsa PIL'in varsayılan yazı tipi kullanılır.
+Testler PNG'nin üretildiğini, aynı adresin aynı görseli verdiğini ve renk ayrıştırmayı denetler. `opencv-python` veya `opencv-python-headless` kuruluysa üretilen kalbi gerçekten okuyup adresi geri alır; CI bu okuma testini çalıştırır. Görselde yazı için macOS'ta Georgia, başka sistemlerde DejaVu Serif aranır; bulunamazsa PIL'in varsayılan yazı tipi kullanılır.
 
 ### 🎂 Doğum günü sürprizi
 Bu betik, [Doğum Günü Sürprizi](https://github.com/yigitbuyukeren/dogum-gunu-surprizi) projesinde sürpriz sayfasının adresini kalp QR koda çevirmek için doğdu. Sürprizi kendin hazırlamak için [oluşturma sayfasına](https://yigitbuyukeren.com/dogum-gunu/olustur/) bak.
