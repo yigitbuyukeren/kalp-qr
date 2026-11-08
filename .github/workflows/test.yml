@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
       - run: pip install -r requirements.txt opencv-python-headless
       - run: python3 -c "import cv2, numpy"
       - run: python3 -m unittest discover -s tests
